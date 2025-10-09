@@ -8,18 +8,23 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url('sfondo.jpg') no-repeat center center fixed; /* Immagine di sfondo */
-      background-size: cover; /* L'immagine copre tutto lo schermo */
+      background-color: #fef7da; /* Sfondo giallo chiaro */
+      background-repeat: no-repeat; /* Non si ripete */
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
       text-align: center;
       padding: 2rem;
-      color: white;
+      color: black; /* Testo leggibile sullo sfondo chiaro */
     }
+
     .logo {
       max-width: 300px; /* Logo più grande */
       border-radius: 0; /* Logo quadrato */
       margin: 0 auto 2rem;
       display: block;
     }
+
     .link-button {
       display: flex;
       align-items: center;
@@ -37,9 +42,11 @@
       transition: transform 0.2s ease, background 0.2s ease;
       cursor: pointer;
     }
+
     .link-button:hover {
       transform: scale(1.03);
     }
+
     .icon {
       width: 24px;
       height: 24px;
@@ -50,6 +57,12 @@
 <body>
   <!-- Logo -->
   <img src="logo.png" alt="Logo La Bella Italia" class="logo" />
+
+  <!-- Bottone Menù -->
+  <a class="link-button" href="https://www.canva.com/design/DAG1PKRTyys/quDzAGhEq0gK55mQzYMR1g/view?utm_content=DAG1PKRTyys&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2682484df1">
+    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="Menu" />
+   Il nostro Catalogo
+  </a>
 
   <!-- Bottone Google Recensioni -->
   <a class="link-button" href="https://search.google.com/local/writereview?placeid=ChIJnYR5qBFDPxMRpxr13fIefqA" target="_blank" rel="noopener noreferrer">
@@ -63,10 +76,22 @@
     Seguici su Instagram
   </div>
 
-  <!-- Bottone Facebook (link diretto al profilo web) -->
+  <!-- Bottone Facebook -->
   <a class="link-button" href="https://www.facebook.com/labellaitaliafrascineto" target="_blank">
     <img class="icon" src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
     Seguici su Facebook
+  </a>
+
+  <!-- Bottone Chiamaci -->
+  <a class="link-button" href="tel:3472355135">
+    <img class="icon phone-icon" src="https://cdn-icons-png.flaticon.com/128/16617/16617786.png" alt="Telefono" />
+    Chiamaci
+  </a>
+
+  <!-- Bottone WhatsApp -->
+  <a class="link-button" href="https://wa.me/393472355135" target="_blank" rel="noopener noreferrer">
+    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+    Scrivici su WhatsApp
   </a>
 
   <script>
